@@ -1,0 +1,38 @@
+Para ejecutar VSL1-1 en general:
+- Descargar y descomprimir vsl-1.1-linux.zip
+- Instalar jdk de Java (sino dispone de una versión instalada en el ordenador)
+- Ejecutable: Debe abrir terminal en la carpeta donde se ha descomprimido VSL y escribir:
+> java -jar vsl-1.1/vsl-app-1.1-linux.jar
+
+Para ejecutar VSL1-1 en Windows (VSL original):
+- Descargar en la misma carpeta: 
+* VSL: vsl-1.1.zip
+* JDK-Java: jdk-11.0.28_windows-x64_bin.zip (Windows-x64)
+* Ejecutable: vsl_Windows_x64.bat.zip 
+- Descomprimir lo descargado en la misma carpeta.
+- Ejecutar vsl_Windows_x64.bat
+
+Para ejecutar VSL1-1 en Linux  (VSL modificado):
+- Descargar en la misma carpeta: 
+* VSL: vsl-1.1-linux.zip
+* JDK-Java: jdk-11.0.28_linux-x64_bin.tar.gz (Linux-x64, para Linux-arm64 debe descargar jdk compatible)
+* Ejecutable: vsl_Linux_x64.sh.zip
+- Descomprimir lo descargado en la misma carpeta.
+- Ejecutar vsl_Linux_x64.sh
+
+Para ejecutar VSL1-1 en MAC (VSL modificado):
+- Descargar y descomprimir vsl-1.1-linux.zip (es compatible con Mac)
+- Instalar jdk de Java (sino dispone de una versión instalada en el ordenador)
+- Ejecutable: Debe abrir terminal en la carpeta donde se ha descomprimido VSL y escribir:
+> java -jar vsl-1.1/vsl-app-1.1-linux.jar
+
+Fuentes de los ficheros:
+* https://vsl.sourceforge.net/
+sha256: dbc4b75211a1d7a79efd6772545bbc797d8252248847286a31987efa41585b26 vsl-1.1.zip
+* https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+sha256: cd095b39cc45dad1eb6c5f8f64ba771692c1912b74b55a4eaa0be8bef17a295a jdk-11.0.28_windows-x64_bin.zip
+* https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
+sha256: ce66c1c4e223bdabcbf2420db3b8204361129df57f10a68c562bb6694be17696 jdk-11.0.28_linux-x64_bin.tar.gz
+
+Otros ficheros:
+* ffd49d3ac85a070770860ef2f5fdebff8a51662c5e8dd858000814d313a274af  vsl-1.1-linux.zip

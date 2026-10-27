@@ -1,0 +1,17 @@
+========================================================================
+ELEMENTOS CRIPTOGRÁFICOS PARA EL DESCIFRADO - SEGURIDAD EN RADIOGRAFÍAS
+Security Team 3 - E.T.S.I.I. Universidad de Sevilla
+========================================================================
+
+Clave Simétrica de 256 bits (HEX): 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+Vector de Inicialización / Nonce de 128 bits (HEX): fedcba9876543210fedcba9876543210
+
+Comandos OpenSSL para el descifrado manual:
+1. AES-256-CBC:
+   openssl enc -aes-256-cbc -d -in <fichero.enc> -out <descifrado.bmp> -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+2. ChaCha20:
+   openssl enc -chacha20 -d -in <fichero.enc> -out <descifrado.bmp> -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+3. Camellia-256-CBC:
+   openssl enc -camellia-256-cbc -d -in <fichero.enc> -out <descifrado.bmp> -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210

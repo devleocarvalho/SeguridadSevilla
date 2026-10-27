@@ -1,0 +1,93 @@
+──(kali㉿kali)-[~/Desktop/seg4]
+└─$ time openssl enc -aes-256-cbc -e -in radiografia_tamano1_500KB.bmp -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+real    0.01s
+user    0.00s
+sys     0.01s
+cpu     86%
+                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/seg4]
+└─$ time openssl enc -chacha20 -e -in radiografia_tamano1_500KB.bmp -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+real    0.01s
+user    0.00s
+sys     0.00s
+cpu     92%
+                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/seg4]
+└─$ time openssl enc -camellia-256-cbc -e -in radiografia_tamano1_500KB.bmp -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+real    0.01s
+user    0.01s
+sys     0.01s
+cpu     92%
+                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/seg4]
+└─$ time openssl enc -aes-128-cbc -e -in radiografia_tamano1_500KB.bmp -out /dev/null -K 0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+real    0.01s
+user    0.00s
+sys     0.00s
+cpu     92%
+                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/seg4]
+└─$ time openssl enc -aes-256-cbc -e -in radiografia_tamano2_1500KB.bmp -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+real    0.01s
+user    0.00s
+sys     0.00s
+cpu     95%
+                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/seg4]
+└─$ time openssl enc -chacha20 -e -in radiografia_tamano2_1500KB.bmp -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+real    0.01s
+user    0.01s
+sys     0.00s
+cpu     95%
+                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/seg4]
+└─$ time openssl enc -camellia-256-cbc -e -in radiografia_tamano2_1500KB.bmp -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+
+real    0.02s
+user    0.02s
+sys     0.00s
+cpu     97%
+                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/seg4]
+└─$ time openssl enc -aes-128-cbc -e -in radiografia_tamano2_1500KB.bmp -out /dev/null -K 0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+real    0.01s
+user    0.00s
+sys     0.00s
+cpu     96%
+                                                                                                                           
+┌──(kali㉿kali)-[~/Desktop/seg4]
+└─$ # AES-256-CBC descifrado:
+time openssl enc -aes-256-cbc -d -in radiografia_tamano1_500KB_aes256cbc.enc -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+# ChaCha20 descifrado:
+time openssl enc -chacha20 -d -in radiografia_tamano1_500KB_chacha20.enc -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+# Camellia-256-CBC descifrado:
+time openssl enc -camellia-256-cbc -d -in radiografia_tamano1_500KB_camellia256cbc.enc -out /dev/null -K 0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef -iv fedcba9876543210fedcba9876543210
+
+
+real    0.01s
+user    0.00s
+sys     0.00s
+cpu     93%
+Can't open "radiografia_tamano1_500KB_chacha20.enc" for reading, No such file or directory
+40D75082037F0000:error:80000002:system library:BIO_new_file:No such file or directory:../crypto/bio/bss_file.c:67:calling fopen(radiografia_tamano1_500KB_chacha20.enc, rb)
+40D75082037F0000:error:10000080:BIO routines:BIO_new_file:no such file:../crypto/bio/bss_file.c:75:
+
+real    0.01s
+user    0.00s
+sys     0.00s
+cpu     92%
+
+real    0.01s
+user    0.01s
+sys     0.00s
+cpu     97%

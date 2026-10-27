@@ -1,0 +1,55 @@
+https://www.vulnhub.com/
+
+Normas del entregable
+Cada Security Team debe entregar a través de la Plataforma de Enseñanza Virtual y en la actividad preparada para ello un archivo zip, nombrado PAI3-ST<Num>.zip, que deberá contener al menos los ficheros siguientes:
+Documento en formato pdf que contenga un informe/resumen del proyecto con los detalles más importantes de las decisiones, soluciones adoptadas y/o implementaciones desarrolladas, así como el resultado y análisis de las pruebas realizadas (máximo 15 páginas). Estructura recomendada:
+Portada e índice contenido
+Resumen ejecutivo
+Auditoría de sistemas informáticos
+Descripción del sistema analizado y herramientas de análisis
+Plan de pruebas y resultados
+Conclusiones
+Análisis y bastionado de navegador web
+Descripción del sistema analizado
+Plan de pruebas y resultados
+Conclusiones
+Auditoría de sistema móvil
+Descripción del sistema analizado y herramientas de análisis
+Plan de pruebas y resultados
+Conclusiones
+Auditoría de sistema web
+Descripción del sistema web  y herramientas de análisis
+Plan de pruebas y resultados
+Conclusiones
+Referencias(no cuenta para el total de páginas permitidas)
+Anexos (no cuenta para el total de páginas)
+
+Evidencias Técnicas: Código fuente y/o scripts desarrollados y/o configuraciones utilizadas de las herramientas. Además, será obligatorio la entrega de las pruebas/test realizados junto con los logs/trazas de todas y cada una de las herramientas de análisis utilizadas (Lynis, ZAP o cualquier otra herramienta utilizada).
+El plazo de entrega de dicho proyecto finaliza el día 10 de noviembre a las 23:59 horas.
+Los proyectos entregados fuera del plazo establecido serán considerados inadecuados por el cliente y, por tanto, entrarán en penalización por cada día de retraso, con entrega de 10% del total, hasta agotarse los puntos.
+El cliente no se aceptarán envíos realizados por email, ni mensajes internos de la enseñanza virtual, ni correo interno de la enseñanza virtual. Toda entrega realizada por estos medios conllevará una penalización del 10% en la entrega.
+
+seguimiento.:
+A (Completamente satisfecho)
+Trabajo continuado durante las sesiones de todo el equipo. Avances significativos y progresivos en la auditoría Linux, bastionado de navegador, análisis móvil y pruebas DAST con OWASP ZAP. Actitud proactiva.
+
+1
+B (Muy satisfecho)
+Seguimiento constante en el aula con pequeñas fluctuaciones de miembros del equipo. Se observan avances aunque faltan aspectos puntuales por perfeccionar (ej. justificación de WARNINGs en Lynis o ajuste de fuzzer).
+
+informe/memoria.
+A (Completamente satisfecho)
+Estructura y Normativa: Cumple estrictamente el límite de 15 páginas y la estructura recomendada (Portada/Índice, Resumen Ejecutivo, Auditoría Linux, Navegadores, Móvil, Web y Conclusiones). Auditoría y Bastionado: Explicación técnica rigurosa de las decisiones tomadas para alcanzar el Hardening Index >70 en Lynis, justificación detallada de directivas aplicadas al navegador y matriz de conformidad de las 8 medidas de seguridad en móviles BYOD. DAST y Pentesting Web: Descripción detallada del despliegue del proxy interceptor ZAP/Burp, importación del certificado CA dinámico X.509, intercepción de peticiones (Breakpoints) y configuración del Fuzzer con diccionarios. Plan de Mitigación: Proposición justificada de controles y soluciones en código (consultas preparadas PDO, encoding HTML contextual, saneamiento de rutas) para corregir al menos 3 vulnerabilidades Top 10. Análisis de Evidencias: Explicación profunda de capturas, logs)y trazas HTTP/HTTPS.
+
+3
+B (Muy satisfecho)
+Documentación completa y bien estructurada. Describe adecuadamente las auditorías de sobremesa, navegadores, móvil y web. Plan de mitigación correcto frente a las vulnerabilidades detectadas. Incluye capturas claras de pantalla y referencias trazables a los logs entregados.
+
+
+código/test/logs
+A (Completamente satisfecho)
+Hardening Linux (2-3 Sistemas): Acreditación de Hardening Index $\ge 70$ en Lynis (o justificación técnica del bastionado). Gestión de WARNINGs y sugerencias en /var/log/lynis.log. Bastionado de Navegador Web: Aplicación de directivas corporativas de fortificación (HTTPS-Only, bloqueo de extensiones no firmadas, restricción de cookies de terceros y DoH). Hardening Móvil BYOD (al menos 2 Dispositivos): Verificación en Android/iOS: sin rooting, sideloading deshabilitado, parches al día, Wi-Fi seguro, Bluetooth restringido, antimalware, sockets activos y revocación de permisos críticos. Intercepción DAST & Trazabilidad (ZAP/Burp): Instalación del certificado CA Raíz en el navegador. Demostración de trazabilidad e intercepción/edición en vivo mediante Breakpoints. Pentesting Web & Fuzzing: Fuzzer automatizado con diccionarios (SecLists/jbrofuzz). Identificación y PoC explotable de al menos 3 vulnerabilidades Top 10 (ej. SQLi, XSS, Path Traversal).
+
+6
+B (Muy satisfecho)
+Implementación técnica sólida con errores menores. Logra el bastionado en Linux, analiza al menos 2 dispositivos móviles y realiza la auditoría DAST identificando 3 vulnerabilidades OWASP. Pequeñas lagunas en la demostración del Fuzzing automatizado o en el registro de trazas de red.
