@@ -20,7 +20,7 @@ Garantías de Seguridad Implementadas:
    mediante la primitiva criptográfica secrets.compare_digest.
 3. Vinculación Fuerte Dispositivo-Usuario (Device-User Binding): Asociación unívoca entre la
    identidad corporativa y el Common Name (CN) del certificado digital X.509 de cliente (RF1, RF2).
-4. Gestión de Concurrencia y Pool de Direcciones Virtuales (10.8.0.0/24) para 300 sesiones simultáneas.
+4. Gestión de Concurrencia y Pool de Direcciones Virtuales (10.8.0.0/22) para 300 sesiones simultáneas.
 5. Registro Inmutable de Auditoría de Accesos, Intentos Fallidos y Bloqueos (RS4).
 ========================================================================================
 """

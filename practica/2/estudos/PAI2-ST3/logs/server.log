@@ -7358,3 +7358,624 @@
 2026-10-26 23:43:23,844 [WARNING] [VPNClientWorker_12] [!] Acceso denegado: Usuario 'carmen_pdi' con rol 'PDI' intentó acceder a 'SISTEMAS_ADMINISTRATIVOS'
 2026-10-26 23:43:26,976 [INFO] [VPNClientWorker_12] [+] Acceso autorizado a 'INVESTIGACION_DB' para usuario 'carmen_pdi' (PDI)
 2026-10-26 23:43:33,607 [INFO] [VPNClientWorker_12] [-] Desconexión solicitada por 'carmen_pdi'. Túnel desmontado de forma segura.
+2026-10-29 12:16:55,114 [INFO] [MainThread] [*] Configurando contexto de seguridad TLS 1.3 con Autenticación Mutua (mTLS)...
+2026-10-29 12:16:55,150 [INFO] [MainThread] [+] Protocolo restringido a TLSv1.3 exclusivamente. Suites AEAD y PFS activadas.
+2026-10-29 12:16:55,151 [INFO] [MainThread] [+] Modo mTLS configurado: Todo cliente BYOD debe presentar certificado firmado por U-Secure Root CA.
+2026-10-29 12:16:55,155 [INFO] [Thread-1 (start)] ==========================================================================
+2026-10-29 12:16:55,156 [INFO] [Thread-1 (start)]  PASARELA ROAD WARRIOR VPN TLS 1.3 (U-SECURE) ACTIVA EN 0.0.0.0:8443
+2026-10-29 12:16:55,156 [INFO] [Thread-1 (start)]  Capacidad de Concurrencia: 350 hilos simultáneos (RS3)
+2026-10-29 12:16:55,156 [INFO] [Thread-1 (start)] ==========================================================================
+2026-10-29 12:17:01,915 [ERROR] [VPNClientWorker_0] [!] Alerta de Seguridad TLS con cliente 127.0.0.1:54760: [SSL: PEER_DID_NOT_RETURN_A_CERTIFICATE] peer did not return a certificate (_ssl.c:1081)
+2026-10-29 12:17:01,951 [ERROR] [VPNClientWorker_1] [!] Alerta de Seguridad TLS con cliente 127.0.0.1:54761: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1081)
+2026-10-29 12:17:02,514 [INFO] [VPNClientWorker_0] [+] Conexión segura establecida con 127.0.0.1:54763 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:02,514 [INFO] [VPNClientWorker_0] [+] Certificado digital X.509 validado para identidad BYOD: 'carmen_pdi'
+2026-10-29 12:17:02,547 [WARNING] [VPNClientWorker_0] [!] Autenticación denegada para usuario 'manuel_ptgas' desde 127.0.0.1: Violación de seguridad: El certificado digital BYOD no corresponde al usuario corporativo.
+2026-10-29 12:17:02,600 [INFO] [VPNClientWorker_1] [+] Conexión segura establecida con 127.0.0.1:54764 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:02,601 [INFO] [VPNClientWorker_1] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:04,119 [INFO] [VPNClientWorker_1] [OK] Sesión VPN iniciada: Usuario 'eval_user' (Auditor) -> IP Virtual: 10.8.0.10
+2026-10-29 12:17:04,120 [INFO] [VPNClientWorker_1] [+] Acceso autorizado a 'CORREO_CORPORATIVO' para usuario 'eval_user' (Auditor)
+2026-10-29 12:17:04,150 [INFO] [VPNClientWorker_1] [+] Acceso autorizado a 'INVESTIGACION_DB' para usuario 'eval_user' (Auditor)
+2026-10-29 12:17:04,206 [INFO] [VPNClientWorker_1] [-] Desconexión solicitada por 'eval_user'. Túnel desmontado de forma segura.
+2026-10-29 12:17:05,701 [ERROR] [VPNClientWorker_0] [!] Alerta de Seguridad TLS con cliente 127.0.0.1:55065: [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1081)
+2026-10-29 12:17:05,741 [INFO] [VPNClientWorker_1] [+] Conexión segura establecida con 127.0.0.1:55066 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,741 [INFO] [VPNClientWorker_1] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,750 [INFO] [VPNClientWorker_4] [+] Conexión segura establecida con 127.0.0.1:55069 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,751 [INFO] [VPNClientWorker_4] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,752 [INFO] [VPNClientWorker_3] [+] Conexión segura establecida con 127.0.0.1:55068 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,759 [INFO] [VPNClientWorker_6] [+] Conexión segura establecida con 127.0.0.1:55071 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,760 [INFO] [VPNClientWorker_7] [+] Conexión segura establecida con 127.0.0.1:55073 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,762 [INFO] [VPNClientWorker_0] [+] Conexión segura establecida con 127.0.0.1:55072 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,763 [INFO] [VPNClientWorker_3] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,763 [INFO] [VPNClientWorker_2] [+] Conexión segura establecida con 127.0.0.1:55067 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,764 [INFO] [VPNClientWorker_6] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,764 [INFO] [VPNClientWorker_8] [+] Conexión segura establecida con 127.0.0.1:55074 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,765 [INFO] [VPNClientWorker_5] [+] Conexión segura establecida con 127.0.0.1:55070 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,765 [INFO] [VPNClientWorker_7] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,767 [INFO] [VPNClientWorker_0] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,768 [INFO] [VPNClientWorker_2] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,769 [INFO] [VPNClientWorker_8] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,772 [INFO] [VPNClientWorker_5] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,782 [INFO] [VPNClientWorker_9] [+] Conexión segura establecida con 127.0.0.1:55075 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,782 [INFO] [VPNClientWorker_9] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,787 [INFO] [VPNClientWorker_11] [+] Conexión segura establecida con 127.0.0.1:55077 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,788 [INFO] [VPNClientWorker_11] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,789 [INFO] [VPNClientWorker_10] [+] Conexión segura establecida con 127.0.0.1:55076 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,789 [INFO] [VPNClientWorker_10] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,801 [INFO] [VPNClientWorker_12] [+] Conexión segura establecida con 127.0.0.1:55078 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,802 [INFO] [VPNClientWorker_12] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,803 [INFO] [VPNClientWorker_13] [+] Conexión segura establecida con 127.0.0.1:55079 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,804 [INFO] [VPNClientWorker_13] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,811 [INFO] [VPNClientWorker_1] [+] Conexión segura establecida con 127.0.0.1:55080 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,812 [INFO] [VPNClientWorker_1] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,812 [INFO] [VPNClientWorker_14] [+] Conexión segura establecida con 127.0.0.1:55081 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,814 [INFO] [VPNClientWorker_14] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,817 [INFO] [VPNClientWorker_15] [+] Conexión segura establecida con 127.0.0.1:55082 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,818 [INFO] [VPNClientWorker_15] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,828 [INFO] [VPNClientWorker_16] [+] Conexión segura establecida con 127.0.0.1:55083 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,828 [INFO] [VPNClientWorker_16] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,829 [INFO] [VPNClientWorker_17] [+] Conexión segura establecida con 127.0.0.1:55084 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,831 [INFO] [VPNClientWorker_17] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,835 [INFO] [VPNClientWorker_4] [+] Conexión segura establecida con 127.0.0.1:55085 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,836 [INFO] [VPNClientWorker_4] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,844 [INFO] [VPNClientWorker_18] [+] Conexión segura establecida con 127.0.0.1:55086 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,846 [INFO] [VPNClientWorker_18] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,850 [INFO] [VPNClientWorker_19] [+] Conexión segura establecida con 127.0.0.1:55087 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,851 [INFO] [VPNClientWorker_19] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,851 [INFO] [VPNClientWorker_20] [+] Conexión segura establecida con 127.0.0.1:55088 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,857 [INFO] [VPNClientWorker_20] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,867 [INFO] [VPNClientWorker_22] [+] Conexión segura establecida con 127.0.0.1:55090 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,868 [INFO] [VPNClientWorker_22] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,869 [INFO] [VPNClientWorker_21] [+] Conexión segura establecida con 127.0.0.1:55089 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,870 [INFO] [VPNClientWorker_3] [+] Conexión segura establecida con 127.0.0.1:55091 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,871 [INFO] [VPNClientWorker_21] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,871 [INFO] [VPNClientWorker_3] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,874 [INFO] [VPNClientWorker_23] [+] Conexión segura establecida con 127.0.0.1:55092 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,875 [INFO] [VPNClientWorker_23] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,880 [INFO] [VPNClientWorker_6] [+] Conexión segura establecida con 127.0.0.1:55093 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,881 [INFO] [VPNClientWorker_6] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,896 [INFO] [VPNClientWorker_25] [+] Conexión segura establecida con 127.0.0.1:55095 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,897 [INFO] [VPNClientWorker_25] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,898 [INFO] [VPNClientWorker_24] [+] Conexión segura establecida con 127.0.0.1:55094 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,898 [INFO] [VPNClientWorker_24] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,901 [INFO] [VPNClientWorker_26] [+] Conexión segura establecida con 127.0.0.1:55096 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,902 [INFO] [VPNClientWorker_26] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,910 [INFO] [VPNClientWorker_27] [+] Conexión segura establecida con 127.0.0.1:55097 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,911 [INFO] [VPNClientWorker_27] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,916 [INFO] [VPNClientWorker_7] [+] Conexión segura establecida con 127.0.0.1:55098 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,917 [INFO] [VPNClientWorker_7] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,925 [INFO] [VPNClientWorker_28] [+] Conexión segura establecida con 127.0.0.1:55099 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,925 [INFO] [VPNClientWorker_28] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,935 [INFO] [VPNClientWorker_29] [+] Conexión segura establecida con 127.0.0.1:55100 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,936 [INFO] [VPNClientWorker_29] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,936 [INFO] [VPNClientWorker_0] [+] Conexión segura establecida con 127.0.0.1:55101 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,937 [INFO] [VPNClientWorker_0] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,943 [INFO] [VPNClientWorker_30] [+] Conexión segura establecida con 127.0.0.1:55102 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,944 [INFO] [VPNClientWorker_30] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,947 [INFO] [VPNClientWorker_31] [+] Conexión segura establecida con 127.0.0.1:55103 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,948 [INFO] [VPNClientWorker_31] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,953 [INFO] [VPNClientWorker_32] [+] Conexión segura establecida con 127.0.0.1:55104 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,954 [INFO] [VPNClientWorker_32] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,960 [INFO] [VPNClientWorker_2] [+] Conexión segura establecida con 127.0.0.1:55105 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,961 [INFO] [VPNClientWorker_2] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,969 [INFO] [VPNClientWorker_33] [+] Conexión segura establecida con 127.0.0.1:55106 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,971 [INFO] [VPNClientWorker_33] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,978 [INFO] [VPNClientWorker_35] [+] Conexión segura establecida con 127.0.0.1:55108 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,979 [INFO] [VPNClientWorker_35] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,985 [INFO] [VPNClientWorker_34] [+] Conexión segura establecida con 127.0.0.1:55107 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,986 [INFO] [VPNClientWorker_34] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,989 [INFO] [VPNClientWorker_8] [+] Conexión segura establecida con 127.0.0.1:55109 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,990 [INFO] [VPNClientWorker_8] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,996 [INFO] [VPNClientWorker_36] [+] Conexión segura establecida con 127.0.0.1:55110 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,997 [INFO] [VPNClientWorker_36] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:05,998 [INFO] [VPNClientWorker_37] [+] Conexión segura establecida con 127.0.0.1:55111 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:05,998 [INFO] [VPNClientWorker_37] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,003 [INFO] [VPNClientWorker_5] [+] Conexión segura establecida con 127.0.0.1:55113 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,003 [INFO] [VPNClientWorker_5] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,004 [INFO] [VPNClientWorker_38] [+] Conexión segura establecida con 127.0.0.1:55112 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,005 [INFO] [VPNClientWorker_38] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,014 [INFO] [VPNClientWorker_40] [+] Conexión segura establecida con 127.0.0.1:55115 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,014 [INFO] [VPNClientWorker_40] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,015 [INFO] [VPNClientWorker_39] [+] Conexión segura establecida con 127.0.0.1:55114 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,015 [INFO] [VPNClientWorker_39] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,037 [INFO] [VPNClientWorker_41] [+] Conexión segura establecida con 127.0.0.1:55116 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,038 [INFO] [VPNClientWorker_41] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,038 [INFO] [VPNClientWorker_9] [+] Conexión segura establecida con 127.0.0.1:55117 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,040 [INFO] [VPNClientWorker_9] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,046 [INFO] [VPNClientWorker_42] [+] Conexión segura establecida con 127.0.0.1:55118 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,047 [INFO] [VPNClientWorker_42] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,047 [INFO] [VPNClientWorker_43] [+] Conexión segura establecida con 127.0.0.1:55119 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,048 [INFO] [VPNClientWorker_43] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,049 [INFO] [VPNClientWorker_44] [+] Conexión segura establecida con 127.0.0.1:55120 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,049 [INFO] [VPNClientWorker_44] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,065 [INFO] [VPNClientWorker_11] [+] Conexión segura establecida con 127.0.0.1:55121 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,066 [INFO] [VPNClientWorker_11] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,072 [INFO] [VPNClientWorker_45] [+] Conexión segura establecida con 127.0.0.1:55122 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,072 [INFO] [VPNClientWorker_45] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,073 [INFO] [VPNClientWorker_47] [+] Conexión segura establecida con 127.0.0.1:55124 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,073 [INFO] [VPNClientWorker_47] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,078 [INFO] [VPNClientWorker_48] [+] Conexión segura establecida con 127.0.0.1:55125 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,079 [INFO] [VPNClientWorker_48] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,082 [INFO] [VPNClientWorker_10] [+] Conexión segura establecida con 127.0.0.1:55127 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,082 [INFO] [VPNClientWorker_10] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,082 [INFO] [VPNClientWorker_46] [+] Conexión segura establecida con 127.0.0.1:55123 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,085 [INFO] [VPNClientWorker_46] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,089 [INFO] [VPNClientWorker_49] [+] Conexión segura establecida con 127.0.0.1:55126 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,090 [INFO] [VPNClientWorker_49] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,098 [INFO] [VPNClientWorker_50] [+] Conexión segura establecida con 127.0.0.1:55129 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,099 [INFO] [VPNClientWorker_50] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,108 [INFO] [VPNClientWorker_51] [+] Conexión segura establecida con 127.0.0.1:55128 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,109 [INFO] [VPNClientWorker_51] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,119 [INFO] [VPNClientWorker_53] [+] Conexión segura establecida con 127.0.0.1:55131 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,122 [INFO] [VPNClientWorker_53] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,124 [INFO] [VPNClientWorker_55] [+] Conexión segura establecida con 127.0.0.1:55134 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,125 [INFO] [VPNClientWorker_55] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,125 [INFO] [VPNClientWorker_52] [+] Conexión segura establecida con 127.0.0.1:55130 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,127 [INFO] [VPNClientWorker_52] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,126 [INFO] [VPNClientWorker_54] [+] Conexión segura establecida con 127.0.0.1:55132 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,130 [INFO] [VPNClientWorker_54] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,132 [INFO] [VPNClientWorker_56] [+] Conexión segura establecida con 127.0.0.1:55135 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,132 [INFO] [VPNClientWorker_12] [+] Conexión segura establecida con 127.0.0.1:55133 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,134 [INFO] [VPNClientWorker_56] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,136 [INFO] [VPNClientWorker_12] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,140 [INFO] [VPNClientWorker_57] [+] Conexión segura establecida con 127.0.0.1:55137 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,141 [INFO] [VPNClientWorker_57] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,148 [INFO] [VPNClientWorker_13] [+] Conexión segura establecida con 127.0.0.1:55136 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,148 [INFO] [VPNClientWorker_13] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,154 [INFO] [VPNClientWorker_58] [+] Conexión segura establecida con 127.0.0.1:55138 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,155 [INFO] [VPNClientWorker_58] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,155 [INFO] [VPNClientWorker_59] [+] Conexión segura establecida con 127.0.0.1:55139 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,158 [INFO] [VPNClientWorker_59] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,167 [INFO] [VPNClientWorker_60] [+] Conexión segura establecida con 127.0.0.1:55140 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,169 [INFO] [VPNClientWorker_60] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,173 [INFO] [VPNClientWorker_61] [+] Conexión segura establecida con 127.0.0.1:55141 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,174 [INFO] [VPNClientWorker_61] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,177 [INFO] [VPNClientWorker_62] [+] Conexión segura establecida con 127.0.0.1:55142 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,177 [INFO] [VPNClientWorker_62] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,180 [INFO] [VPNClientWorker_1] [+] Conexión segura establecida con 127.0.0.1:55143 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,180 [INFO] [VPNClientWorker_1] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,184 [INFO] [VPNClientWorker_63] [+] Conexión segura establecida con 127.0.0.1:55144 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,184 [INFO] [VPNClientWorker_63] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,200 [INFO] [VPNClientWorker_64] [+] Conexión segura establecida con 127.0.0.1:55145 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,201 [INFO] [VPNClientWorker_64] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,203 [INFO] [VPNClientWorker_65] [+] Conexión segura establecida con 127.0.0.1:55146 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,205 [INFO] [VPNClientWorker_65] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,205 [INFO] [VPNClientWorker_66] [+] Conexión segura establecida con 127.0.0.1:55147 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,206 [INFO] [VPNClientWorker_66] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,213 [INFO] [VPNClientWorker_67] [+] Conexión segura establecida con 127.0.0.1:55148 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,213 [INFO] [VPNClientWorker_67] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,214 [INFO] [VPNClientWorker_14] [+] Conexión segura establecida con 127.0.0.1:55149 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,216 [INFO] [VPNClientWorker_14] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,224 [INFO] [VPNClientWorker_69] [+] Conexión segura establecida con 127.0.0.1:55151 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,225 [INFO] [VPNClientWorker_69] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,227 [INFO] [VPNClientWorker_68] [+] Conexión segura establecida con 127.0.0.1:55150 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,227 [INFO] [VPNClientWorker_68] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,228 [INFO] [VPNClientWorker_15] [+] Conexión segura establecida con 127.0.0.1:55153 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,228 [INFO] [VPNClientWorker_15] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,232 [INFO] [VPNClientWorker_70] [+] Conexión segura establecida con 127.0.0.1:55152 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,233 [INFO] [VPNClientWorker_70] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,245 [INFO] [VPNClientWorker_71] [+] Conexión segura establecida con 127.0.0.1:55154 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,245 [INFO] [VPNClientWorker_71] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,259 [INFO] [VPNClientWorker_73] [+] Conexión segura establecida con 127.0.0.1:55156 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,260 [INFO] [VPNClientWorker_73] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,261 [INFO] [VPNClientWorker_72] [+] Conexión segura establecida con 127.0.0.1:55155 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,262 [INFO] [VPNClientWorker_72] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,261 [INFO] [VPNClientWorker_16] [+] Conexión segura establecida con 127.0.0.1:55158 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,263 [INFO] [VPNClientWorker_16] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,269 [INFO] [VPNClientWorker_74] [+] Conexión segura establecida con 127.0.0.1:55157 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,270 [INFO] [VPNClientWorker_74] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,271 [INFO] [VPNClientWorker_75] [+] Conexión segura establecida con 127.0.0.1:55159 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,272 [INFO] [VPNClientWorker_75] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,276 [INFO] [VPNClientWorker_76] [+] Conexión segura establecida con 127.0.0.1:55160 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,277 [INFO] [VPNClientWorker_76] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,280 [INFO] [VPNClientWorker_17] [+] Conexión segura establecida con 127.0.0.1:55161 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,281 [INFO] [VPNClientWorker_17] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,288 [INFO] [VPNClientWorker_78] [+] Conexión segura establecida con 127.0.0.1:55163 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,289 [INFO] [VPNClientWorker_77] [+] Conexión segura establecida con 127.0.0.1:55162 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,290 [INFO] [VPNClientWorker_78] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,291 [INFO] [VPNClientWorker_77] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,297 [INFO] [VPNClientWorker_79] [+] Conexión segura establecida con 127.0.0.1:55164 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,298 [INFO] [VPNClientWorker_79] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,300 [INFO] [VPNClientWorker_80] [+] Conexión segura establecida con 127.0.0.1:55165 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,300 [INFO] [VPNClientWorker_80] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,307 [INFO] [VPNClientWorker_81] [+] Conexión segura establecida con 127.0.0.1:55166 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,308 [INFO] [VPNClientWorker_81] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,313 [INFO] [VPNClientWorker_4] [+] Conexión segura establecida con 127.0.0.1:55167 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,313 [INFO] [VPNClientWorker_4] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,316 [INFO] [VPNClientWorker_82] [+] Conexión segura establecida con 127.0.0.1:55168 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,317 [INFO] [VPNClientWorker_82] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,328 [INFO] [VPNClientWorker_83] [+] Conexión segura establecida con 127.0.0.1:55169 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,329 [INFO] [VPNClientWorker_83] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,339 [INFO] [VPNClientWorker_84] [+] Conexión segura establecida con 127.0.0.1:55170 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,339 [INFO] [VPNClientWorker_84] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,347 [INFO] [VPNClientWorker_18] [+] Conexión segura establecida con 127.0.0.1:55171 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,348 [INFO] [VPNClientWorker_18] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,355 [INFO] [VPNClientWorker_85] [+] Conexión segura establecida con 127.0.0.1:55172 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,356 [INFO] [VPNClientWorker_85] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,415 [INFO] [VPNClientWorker_86] [+] Conexión segura establecida con 127.0.0.1:55173 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,422 [INFO] [VPNClientWorker_86] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,426 [INFO] [VPNClientWorker_19] [+] Conexión segura establecida con 127.0.0.1:55174 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,429 [INFO] [VPNClientWorker_87] [+] Conexión segura establecida con 127.0.0.1:55175 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,430 [INFO] [VPNClientWorker_19] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,431 [INFO] [VPNClientWorker_87] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,452 [INFO] [VPNClientWorker_20] [+] Conexión segura establecida con 127.0.0.1:55177 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,453 [INFO] [VPNClientWorker_20] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,467 [INFO] [VPNClientWorker_88] [+] Conexión segura establecida con 127.0.0.1:55176 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,468 [INFO] [VPNClientWorker_88] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,485 [INFO] [VPNClientWorker_89] [+] Conexión segura establecida con 127.0.0.1:55178 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,485 [INFO] [VPNClientWorker_89] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,488 [INFO] [VPNClientWorker_90] [+] Conexión segura establecida con 127.0.0.1:55179 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,489 [INFO] [VPNClientWorker_90] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,491 [INFO] [VPNClientWorker_22] [+] Conexión segura establecida con 127.0.0.1:55180 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,491 [INFO] [VPNClientWorker_22] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,495 [INFO] [VPNClientWorker_91] [+] Conexión segura establecida con 127.0.0.1:55181 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,497 [INFO] [VPNClientWorker_91] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,508 [INFO] [VPNClientWorker_92] [+] Conexión segura establecida con 127.0.0.1:55182 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,509 [INFO] [VPNClientWorker_92] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,519 [INFO] [VPNClientWorker_94] [+] Conexión segura establecida con 127.0.0.1:55184 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,520 [INFO] [VPNClientWorker_94] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,521 [INFO] [VPNClientWorker_93] [+] Conexión segura establecida con 127.0.0.1:55183 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,521 [INFO] [VPNClientWorker_93] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,527 [INFO] [VPNClientWorker_21] [+] Conexión segura establecida con 127.0.0.1:55185 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,528 [INFO] [VPNClientWorker_21] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,531 [INFO] [VPNClientWorker_95] [+] Conexión segura establecida con 127.0.0.1:55186 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,532 [INFO] [VPNClientWorker_95] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,536 [INFO] [VPNClientWorker_97] [+] Conexión segura establecida con 127.0.0.1:55188 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,537 [INFO] [VPNClientWorker_97] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,538 [INFO] [VPNClientWorker_96] [+] Conexión segura establecida con 127.0.0.1:55187 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,539 [INFO] [VPNClientWorker_96] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,545 [INFO] [VPNClientWorker_98] [+] Conexión segura establecida con 127.0.0.1:55189 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,546 [INFO] [VPNClientWorker_98] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,550 [INFO] [VPNClientWorker_99] [+] Conexión segura establecida con 127.0.0.1:55190 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,552 [INFO] [VPNClientWorker_99] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,556 [INFO] [VPNClientWorker_3] [+] Conexión segura establecida con 127.0.0.1:55191 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,557 [INFO] [VPNClientWorker_3] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,557 [INFO] [VPNClientWorker_100] [+] Conexión segura establecida con 127.0.0.1:55192 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,558 [INFO] [VPNClientWorker_100] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,560 [INFO] [VPNClientWorker_101] [+] Conexión segura establecida con 127.0.0.1:55193 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,560 [INFO] [VPNClientWorker_101] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,576 [INFO] [VPNClientWorker_103] [+] Conexión segura establecida con 127.0.0.1:55196 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,576 [INFO] [VPNClientWorker_103] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,580 [INFO] [VPNClientWorker_23] [+] Conexión segura establecida con 127.0.0.1:55195 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,581 [INFO] [VPNClientWorker_23] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,582 [INFO] [VPNClientWorker_102] [+] Conexión segura establecida con 127.0.0.1:55194 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,580 [INFO] [VPNClientWorker_104] [+] Conexión segura establecida con 127.0.0.1:55197 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,585 [INFO] [VPNClientWorker_102] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,586 [INFO] [VPNClientWorker_104] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,589 [INFO] [VPNClientWorker_6] [+] Conexión segura establecida con 127.0.0.1:55199 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,590 [INFO] [VPNClientWorker_6] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,601 [INFO] [VPNClientWorker_106] [+] Conexión segura establecida con 127.0.0.1:55200 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,603 [INFO] [VPNClientWorker_106] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,605 [INFO] [VPNClientWorker_107] [+] Conexión segura establecida con 127.0.0.1:55202 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,605 [INFO] [VPNClientWorker_105] [+] Conexión segura establecida con 127.0.0.1:55198 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,607 [INFO] [VPNClientWorker_107] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,610 [INFO] [VPNClientWorker_105] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,621 [INFO] [VPNClientWorker_108] [+] Conexión segura establecida con 127.0.0.1:55201 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,622 [INFO] [VPNClientWorker_108] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,641 [INFO] [VPNClientWorker_109] [+] Conexión segura establecida con 127.0.0.1:55203 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,641 [INFO] [VPNClientWorker_109] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,642 [INFO] [VPNClientWorker_25] [+] Conexión segura establecida con 127.0.0.1:55205 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,642 [INFO] [VPNClientWorker_110] [+] Conexión segura establecida con 127.0.0.1:55204 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,643 [INFO] [VPNClientWorker_25] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,644 [INFO] [VPNClientWorker_111] [+] Conexión segura establecida con 127.0.0.1:55206 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,646 [INFO] [VPNClientWorker_111] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,645 [INFO] [VPNClientWorker_110] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,655 [INFO] [VPNClientWorker_113] [+] Conexión segura establecida con 127.0.0.1:55208 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,656 [INFO] [VPNClientWorker_113] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,655 [INFO] [VPNClientWorker_112] [+] Conexión segura establecida con 127.0.0.1:55207 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,659 [INFO] [VPNClientWorker_112] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,660 [INFO] [VPNClientWorker_114] [+] Conexión segura establecida con 127.0.0.1:55209 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,662 [INFO] [VPNClientWorker_114] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,663 [INFO] [VPNClientWorker_24] [+] Conexión segura establecida con 127.0.0.1:55210 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,664 [INFO] [VPNClientWorker_24] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,668 [INFO] [VPNClientWorker_115] [+] Conexión segura establecida con 127.0.0.1:55211 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,669 [INFO] [VPNClientWorker_115] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,674 [INFO] [VPNClientWorker_116] [+] Conexión segura establecida con 127.0.0.1:55212 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,675 [INFO] [VPNClientWorker_116] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,685 [INFO] [VPNClientWorker_117] [+] Conexión segura establecida con 127.0.0.1:55213 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,685 [INFO] [VPNClientWorker_117] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,685 [INFO] [VPNClientWorker_26] [+] Conexión segura establecida con 127.0.0.1:55214 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,688 [INFO] [VPNClientWorker_26] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,700 [INFO] [VPNClientWorker_121] [+] Conexión segura establecida con 127.0.0.1:55218 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,702 [INFO] [VPNClientWorker_121] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,704 [INFO] [VPNClientWorker_118] [+] Conexión segura establecida con 127.0.0.1:55215 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,705 [INFO] [VPNClientWorker_118] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,705 [INFO] [VPNClientWorker_120] [+] Conexión segura establecida con 127.0.0.1:55217 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,707 [INFO] [VPNClientWorker_120] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,708 [INFO] [VPNClientWorker_27] [+] Conexión segura establecida con 127.0.0.1:55219 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,711 [INFO] [VPNClientWorker_119] [+] Conexión segura establecida con 127.0.0.1:55216 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,713 [INFO] [VPNClientWorker_27] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,715 [INFO] [VPNClientWorker_119] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,718 [INFO] [VPNClientWorker_122] [+] Conexión segura establecida con 127.0.0.1:55220 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,718 [INFO] [VPNClientWorker_122] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,723 [INFO] [VPNClientWorker_123] [+] Conexión segura establecida con 127.0.0.1:55221 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,724 [INFO] [VPNClientWorker_123] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,728 [INFO] [VPNClientWorker_124] [+] Conexión segura establecida con 127.0.0.1:55222 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,730 [INFO] [VPNClientWorker_124] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,738 [INFO] [VPNClientWorker_126] [+] Conexión segura establecida con 127.0.0.1:55225 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,739 [INFO] [VPNClientWorker_126] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,740 [INFO] [VPNClientWorker_7] [+] Conexión segura establecida con 127.0.0.1:55223 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,741 [INFO] [VPNClientWorker_7] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,744 [INFO] [VPNClientWorker_127] [+] Conexión segura establecida con 127.0.0.1:55226 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,744 [INFO] [VPNClientWorker_127] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,746 [INFO] [VPNClientWorker_125] [+] Conexión segura establecida con 127.0.0.1:55224 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,746 [INFO] [VPNClientWorker_125] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,750 [INFO] [VPNClientWorker_128] [+] Conexión segura establecida con 127.0.0.1:55227 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,753 [INFO] [VPNClientWorker_128] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,759 [INFO] [VPNClientWorker_28] [+] Conexión segura establecida con 127.0.0.1:55229 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,760 [INFO] [VPNClientWorker_28] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,763 [INFO] [VPNClientWorker_129] [+] Conexión segura establecida con 127.0.0.1:55228 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,767 [INFO] [VPNClientWorker_129] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,771 [INFO] [VPNClientWorker_130] [+] Conexión segura establecida con 127.0.0.1:55230 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,771 [INFO] [VPNClientWorker_130] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,777 [INFO] [VPNClientWorker_131] [+] Conexión segura establecida con 127.0.0.1:55231 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,777 [INFO] [VPNClientWorker_131] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,780 [INFO] [VPNClientWorker_132] [+] Conexión segura establecida con 127.0.0.1:55232 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,781 [INFO] [VPNClientWorker_132] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,785 [INFO] [VPNClientWorker_29] [+] Conexión segura establecida con 127.0.0.1:55233 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,787 [INFO] [VPNClientWorker_29] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,788 [INFO] [VPNClientWorker_133] [+] Conexión segura establecida con 127.0.0.1:55234 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,789 [INFO] [VPNClientWorker_133] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,796 [INFO] [VPNClientWorker_134] [+] Conexión segura establecida con 127.0.0.1:55235 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,797 [INFO] [VPNClientWorker_134] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,802 [INFO] [VPNClientWorker_135] [+] Conexión segura establecida con 127.0.0.1:55236 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,802 [INFO] [VPNClientWorker_135] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,809 [INFO] [VPNClientWorker_136] [+] Conexión segura establecida con 127.0.0.1:55237 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,810 [INFO] [VPNClientWorker_136] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,810 [INFO] [VPNClientWorker_137] [+] Conexión segura establecida con 127.0.0.1:55238 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,812 [INFO] [VPNClientWorker_137] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,814 [INFO] [VPNClientWorker_0] [+] Conexión segura establecida con 127.0.0.1:55239 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,815 [INFO] [VPNClientWorker_0] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,816 [INFO] [VPNClientWorker_138] [+] Conexión segura establecida con 127.0.0.1:55240 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,817 [INFO] [VPNClientWorker_138] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,827 [INFO] [VPNClientWorker_139] [+] Conexión segura establecida con 127.0.0.1:55241 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,827 [INFO] [VPNClientWorker_139] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,830 [INFO] [VPNClientWorker_140] [+] Conexión segura establecida con 127.0.0.1:55242 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,830 [INFO] [VPNClientWorker_140] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,834 [INFO] [VPNClientWorker_141] [+] Conexión segura establecida con 127.0.0.1:55243 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,834 [INFO] [VPNClientWorker_141] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,839 [INFO] [VPNClientWorker_30] [+] Conexión segura establecida con 127.0.0.1:55244 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,840 [INFO] [VPNClientWorker_30] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,843 [INFO] [VPNClientWorker_142] [+] Conexión segura establecida con 127.0.0.1:55245 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,844 [INFO] [VPNClientWorker_142] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,854 [INFO] [VPNClientWorker_144] [+] Conexión segura establecida con 127.0.0.1:55247 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,854 [INFO] [VPNClientWorker_144] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,855 [INFO] [VPNClientWorker_146] [+] Conexión segura establecida con 127.0.0.1:55249 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,855 [INFO] [VPNClientWorker_146] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,857 [INFO] [VPNClientWorker_143] [+] Conexión segura establecida con 127.0.0.1:55246 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,858 [INFO] [VPNClientWorker_143] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,863 [INFO] [VPNClientWorker_31] [+] Conexión segura establecida con 127.0.0.1:55250 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,863 [INFO] [VPNClientWorker_31] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,864 [INFO] [VPNClientWorker_145] [+] Conexión segura establecida con 127.0.0.1:55248 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,865 [INFO] [VPNClientWorker_145] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,870 [INFO] [VPNClientWorker_147] [+] Conexión segura establecida con 127.0.0.1:55251 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,870 [INFO] [VPNClientWorker_147] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,877 [INFO] [VPNClientWorker_149] [+] Conexión segura establecida con 127.0.0.1:55253 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,877 [INFO] [VPNClientWorker_149] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,878 [INFO] [VPNClientWorker_148] [+] Conexión segura establecida con 127.0.0.1:55252 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,878 [INFO] [VPNClientWorker_148] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,885 [INFO] [VPNClientWorker_150] [+] Conexión segura establecida con 127.0.0.1:55254 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,887 [INFO] [VPNClientWorker_32] [+] Conexión segura establecida con 127.0.0.1:55255 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,889 [INFO] [VPNClientWorker_150] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,890 [INFO] [VPNClientWorker_32] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,899 [INFO] [VPNClientWorker_152] [+] Conexión segura establecida con 127.0.0.1:55257 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,899 [INFO] [VPNClientWorker_152] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,902 [INFO] [VPNClientWorker_151] [+] Conexión segura establecida con 127.0.0.1:55256 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,903 [INFO] [VPNClientWorker_151] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,907 [INFO] [VPNClientWorker_153] [+] Conexión segura establecida con 127.0.0.1:55258 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,907 [INFO] [VPNClientWorker_153] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,923 [INFO] [VPNClientWorker_2] [+] Conexión segura establecida con 127.0.0.1:55260 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,924 [INFO] [VPNClientWorker_2] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,927 [INFO] [VPNClientWorker_154] [+] Conexión segura establecida con 127.0.0.1:55259 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,927 [INFO] [VPNClientWorker_154] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,929 [INFO] [VPNClientWorker_155] [+] Conexión segura establecida con 127.0.0.1:55261 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,930 [INFO] [VPNClientWorker_155] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,936 [INFO] [VPNClientWorker_156] [+] Conexión segura establecida con 127.0.0.1:55262 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,937 [INFO] [VPNClientWorker_156] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,938 [INFO] [VPNClientWorker_157] [+] Conexión segura establecida con 127.0.0.1:55263 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,938 [INFO] [VPNClientWorker_157] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,939 [INFO] [VPNClientWorker_158] [+] Conexión segura establecida con 127.0.0.1:55264 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,942 [INFO] [VPNClientWorker_158] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,950 [INFO] [VPNClientWorker_159] [+] Conexión segura establecida con 127.0.0.1:55266 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,950 [INFO] [VPNClientWorker_159] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,962 [INFO] [VPNClientWorker_33] [+] Conexión segura establecida con 127.0.0.1:55265 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,962 [INFO] [VPNClientWorker_33] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,962 [INFO] [VPNClientWorker_160] [+] Conexión segura establecida con 127.0.0.1:55267 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,963 [INFO] [VPNClientWorker_160] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,972 [INFO] [VPNClientWorker_161] [+] Conexión segura establecida con 127.0.0.1:55269 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,973 [INFO] [VPNClientWorker_161] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,978 [INFO] [VPNClientWorker_35] [+] Conexión segura establecida con 127.0.0.1:55271 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,982 [INFO] [VPNClientWorker_35] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,982 [INFO] [VPNClientWorker_162] [+] Conexión segura establecida con 127.0.0.1:55268 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,982 [INFO] [VPNClientWorker_162] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,984 [INFO] [VPNClientWorker_163] [+] Conexión segura establecida con 127.0.0.1:55270 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,985 [INFO] [VPNClientWorker_163] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:06,986 [INFO] [VPNClientWorker_164] [+] Conexión segura establecida con 127.0.0.1:55272 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:06,987 [INFO] [VPNClientWorker_164] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,005 [INFO] [VPNClientWorker_34] [+] Conexión segura establecida con 127.0.0.1:55274 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,005 [INFO] [VPNClientWorker_34] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,017 [INFO] [VPNClientWorker_167] [+] Conexión segura establecida con 127.0.0.1:55276 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,017 [INFO] [VPNClientWorker_167] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,018 [INFO] [VPNClientWorker_168] [+] Conexión segura establecida con 127.0.0.1:55277 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,019 [INFO] [VPNClientWorker_168] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,020 [INFO] [VPNClientWorker_165] [+] Conexión segura establecida con 127.0.0.1:55273 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,021 [INFO] [VPNClientWorker_165] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,024 [INFO] [VPNClientWorker_166] [+] Conexión segura establecida con 127.0.0.1:55275 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,024 [INFO] [VPNClientWorker_166] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,028 [INFO] [VPNClientWorker_169] [+] Conexión segura establecida con 127.0.0.1:55278 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,029 [INFO] [VPNClientWorker_169] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,034 [INFO] [VPNClientWorker_8] [+] Conexión segura establecida con 127.0.0.1:55279 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,035 [INFO] [VPNClientWorker_8] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,045 [INFO] [VPNClientWorker_170] [+] Conexión segura establecida con 127.0.0.1:55280 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,046 [INFO] [VPNClientWorker_170] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,045 [INFO] [VPNClientWorker_171] [+] Conexión segura establecida con 127.0.0.1:55281 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,047 [INFO] [VPNClientWorker_171] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,061 [INFO] [VPNClientWorker_172] [+] Conexión segura establecida con 127.0.0.1:55282 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,062 [INFO] [VPNClientWorker_172] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,067 [INFO] [VPNClientWorker_173] [+] Conexión segura establecida con 127.0.0.1:55283 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,067 [INFO] [VPNClientWorker_173] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,069 [INFO] [VPNClientWorker_174] [+] Conexión segura establecida con 127.0.0.1:55284 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,070 [INFO] [VPNClientWorker_174] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,080 [INFO] [VPNClientWorker_36] [+] Conexión segura establecida con 127.0.0.1:55285 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,081 [INFO] [VPNClientWorker_36] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,093 [INFO] [VPNClientWorker_177] [+] Conexión segura establecida con 127.0.0.1:55288 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,094 [INFO] [VPNClientWorker_177] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,095 [INFO] [VPNClientWorker_176] [+] Conexión segura establecida con 127.0.0.1:55287 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,097 [INFO] [VPNClientWorker_176] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,099 [INFO] [VPNClientWorker_175] [+] Conexión segura establecida con 127.0.0.1:55286 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,100 [INFO] [VPNClientWorker_175] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,113 [INFO] [VPNClientWorker_179] [+] Conexión segura establecida con 127.0.0.1:55290 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,113 [INFO] [VPNClientWorker_179] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,114 [INFO] [VPNClientWorker_178] [+] Conexión segura establecida con 127.0.0.1:55289 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,114 [INFO] [VPNClientWorker_178] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,117 [INFO] [VPNClientWorker_180] [+] Conexión segura establecida con 127.0.0.1:55292 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,117 [INFO] [VPNClientWorker_180] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,124 [INFO] [VPNClientWorker_37] [+] Conexión segura establecida con 127.0.0.1:55291 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,125 [INFO] [VPNClientWorker_181] [+] Conexión segura establecida con 127.0.0.1:55293 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,127 [INFO] [VPNClientWorker_181] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,126 [INFO] [VPNClientWorker_37] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,139 [INFO] [VPNClientWorker_182] [+] Conexión segura establecida con 127.0.0.1:55294 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,140 [INFO] [VPNClientWorker_182] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,140 [INFO] [VPNClientWorker_183] [+] Conexión segura establecida con 127.0.0.1:55295 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,142 [INFO] [VPNClientWorker_183] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,150 [INFO] [VPNClientWorker_184] [+] Conexión segura establecida con 127.0.0.1:55296 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,150 [INFO] [VPNClientWorker_184] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,158 [INFO] [VPNClientWorker_185] [+] Conexión segura establecida con 127.0.0.1:55297 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,160 [INFO] [VPNClientWorker_185] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,161 [INFO] [VPNClientWorker_186] [+] Conexión segura establecida con 127.0.0.1:55298 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,162 [INFO] [VPNClientWorker_186] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,168 [INFO] [VPNClientWorker_5] [+] Conexión segura establecida con 127.0.0.1:55299 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,168 [INFO] [VPNClientWorker_5] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,174 [INFO] [VPNClientWorker_188] [+] Conexión segura establecida con 127.0.0.1:55301 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,176 [INFO] [VPNClientWorker_188] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,178 [INFO] [VPNClientWorker_187] [+] Conexión segura establecida con 127.0.0.1:55300 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,179 [INFO] [VPNClientWorker_187] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,180 [INFO] [VPNClientWorker_189] [+] Conexión segura establecida con 127.0.0.1:55302 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,181 [INFO] [VPNClientWorker_189] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,187 [INFO] [VPNClientWorker_38] [+] Conexión segura establecida con 127.0.0.1:55303 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,188 [INFO] [VPNClientWorker_38] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,198 [INFO] [VPNClientWorker_191] [+] Conexión segura establecida con 127.0.0.1:55305 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,199 [INFO] [VPNClientWorker_191] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,199 [INFO] [VPNClientWorker_192] [+] Conexión segura establecida con 127.0.0.1:55306 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,200 [INFO] [VPNClientWorker_190] [+] Conexión segura establecida con 127.0.0.1:55304 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,202 [INFO] [VPNClientWorker_190] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,202 [INFO] [VPNClientWorker_192] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,209 [INFO] [VPNClientWorker_40] [+] Conexión segura establecida con 127.0.0.1:55307 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,211 [INFO] [VPNClientWorker_40] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,211 [INFO] [VPNClientWorker_193] [+] Conexión segura establecida con 127.0.0.1:55308 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,213 [INFO] [VPNClientWorker_193] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,218 [INFO] [VPNClientWorker_194] [+] Conexión segura establecida con 127.0.0.1:55309 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,220 [INFO] [VPNClientWorker_194] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,227 [INFO] [VPNClientWorker_196] [+] Conexión segura establecida con 127.0.0.1:55311 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,227 [INFO] [VPNClientWorker_196] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,233 [INFO] [VPNClientWorker_197] [+] Conexión segura establecida con 127.0.0.1:55312 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,234 [INFO] [VPNClientWorker_197] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,246 [INFO] [VPNClientWorker_198] [+] Conexión segura establecida con 127.0.0.1:55314 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,247 [INFO] [VPNClientWorker_198] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,248 [INFO] [VPNClientWorker_199] [+] Conexión segura establecida con 127.0.0.1:55315 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,247 [INFO] [VPNClientWorker_195] [+] Conexión segura establecida con 127.0.0.1:55310 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,247 [INFO] [VPNClientWorker_200] [+] Conexión segura establecida con 127.0.0.1:55316 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,249 [INFO] [VPNClientWorker_199] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,251 [INFO] [VPNClientWorker_195] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,251 [INFO] [VPNClientWorker_39] [+] Conexión segura establecida con 127.0.0.1:55313 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,252 [INFO] [VPNClientWorker_200] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,256 [INFO] [VPNClientWorker_39] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,268 [INFO] [VPNClientWorker_201] [+] Conexión segura establecida con 127.0.0.1:55317 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,270 [INFO] [VPNClientWorker_201] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,277 [INFO] [VPNClientWorker_204] [+] Conexión segura establecida con 127.0.0.1:55320 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,277 [INFO] [VPNClientWorker_204] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,277 [INFO] [VPNClientWorker_202] [+] Conexión segura establecida con 127.0.0.1:55318 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,278 [INFO] [VPNClientWorker_202] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,285 [INFO] [VPNClientWorker_203] [+] Conexión segura establecida con 127.0.0.1:55319 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,287 [INFO] [VPNClientWorker_203] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,288 [INFO] [VPNClientWorker_41] [+] Conexión segura establecida con 127.0.0.1:55321 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,288 [INFO] [VPNClientWorker_41] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,289 [INFO] [VPNClientWorker_205] [+] Conexión segura establecida con 127.0.0.1:55322 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,290 [INFO] [VPNClientWorker_205] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,308 [INFO] [VPNClientWorker_208] [+] Conexión segura establecida con 127.0.0.1:55325 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,309 [INFO] [VPNClientWorker_208] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,316 [INFO] [VPNClientWorker_206] [+] Conexión segura establecida con 127.0.0.1:55323 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,317 [INFO] [VPNClientWorker_209] [+] Conexión segura establecida con 127.0.0.1:55327 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,318 [INFO] [VPNClientWorker_9] [+] Conexión segura establecida con 127.0.0.1:55326 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,318 [INFO] [VPNClientWorker_207] [+] Conexión segura establecida con 127.0.0.1:55324 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,319 [INFO] [VPNClientWorker_206] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,320 [INFO] [VPNClientWorker_209] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,325 [INFO] [VPNClientWorker_9] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,326 [INFO] [VPNClientWorker_212] [+] Conexión segura establecida con 127.0.0.1:55330 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,327 [INFO] [VPNClientWorker_207] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,330 [INFO] [VPNClientWorker_212] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,338 [INFO] [VPNClientWorker_211] [+] Conexión segura establecida con 127.0.0.1:55329 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,339 [INFO] [VPNClientWorker_211] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,339 [INFO] [VPNClientWorker_213] [+] Conexión segura establecida con 127.0.0.1:55331 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,340 [INFO] [VPNClientWorker_210] [+] Conexión segura establecida con 127.0.0.1:55328 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,341 [INFO] [VPNClientWorker_210] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,340 [INFO] [VPNClientWorker_213] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,350 [INFO] [VPNClientWorker_214] [+] Conexión segura establecida con 127.0.0.1:55332 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,351 [INFO] [VPNClientWorker_214] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,352 [INFO] [VPNClientWorker_215] [+] Conexión segura establecida con 127.0.0.1:55334 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,353 [INFO] [VPNClientWorker_215] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,364 [INFO] [VPNClientWorker_216] [+] Conexión segura establecida con 127.0.0.1:55335 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,364 [INFO] [VPNClientWorker_216] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,371 [INFO] [VPNClientWorker_42] [+] Conexión segura establecida con 127.0.0.1:55333 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,375 [INFO] [VPNClientWorker_220] [+] Conexión segura establecida con 127.0.0.1:55339 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,377 [INFO] [VPNClientWorker_220] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,376 [INFO] [VPNClientWorker_217] [+] Conexión segura establecida con 127.0.0.1:55336 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,376 [INFO] [VPNClientWorker_42] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,379 [INFO] [VPNClientWorker_217] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,381 [INFO] [VPNClientWorker_43] [+] Conexión segura establecida con 127.0.0.1:55341 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,382 [INFO] [VPNClientWorker_43] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,382 [INFO] [VPNClientWorker_219] [+] Conexión segura establecida con 127.0.0.1:55338 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,383 [INFO] [VPNClientWorker_219] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,384 [INFO] [VPNClientWorker_218] [+] Conexión segura establecida con 127.0.0.1:55337 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,385 [INFO] [VPNClientWorker_218] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,395 [INFO] [VPNClientWorker_221] [+] Conexión segura establecida con 127.0.0.1:55340 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,397 [INFO] [VPNClientWorker_221] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,400 [INFO] [VPNClientWorker_222] [+] Conexión segura establecida con 127.0.0.1:55342 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,400 [INFO] [VPNClientWorker_222] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,408 [INFO] [VPNClientWorker_44] [+] Conexión segura establecida con 127.0.0.1:55343 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,409 [INFO] [VPNClientWorker_44] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,412 [INFO] [VPNClientWorker_223] [+] Conexión segura establecida con 127.0.0.1:55344 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,415 [INFO] [VPNClientWorker_223] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,416 [INFO] [VPNClientWorker_224] [+] Conexión segura establecida con 127.0.0.1:55345 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,417 [INFO] [VPNClientWorker_224] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,432 [INFO] [VPNClientWorker_225] [+] Conexión segura establecida con 127.0.0.1:55346 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,433 [INFO] [VPNClientWorker_225] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,436 [INFO] [VPNClientWorker_226] [+] Conexión segura establecida con 127.0.0.1:55347 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,437 [INFO] [VPNClientWorker_227] [+] Conexión segura establecida con 127.0.0.1:55348 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,440 [INFO] [VPNClientWorker_229] [+] Conexión segura establecida con 127.0.0.1:55350 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,439 [INFO] [VPNClientWorker_226] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,441 [INFO] [VPNClientWorker_228] [+] Conexión segura establecida con 127.0.0.1:55349 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,442 [INFO] [VPNClientWorker_227] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,443 [INFO] [VPNClientWorker_229] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,443 [INFO] [VPNClientWorker_228] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,449 [INFO] [VPNClientWorker_11] [+] Conexión segura establecida con 127.0.0.1:55351 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,449 [INFO] [VPNClientWorker_11] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,460 [INFO] [VPNClientWorker_232] [+] Conexión segura establecida con 127.0.0.1:55354 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,461 [INFO] [VPNClientWorker_232] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,463 [INFO] [VPNClientWorker_230] [+] Conexión segura establecida con 127.0.0.1:55352 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,463 [INFO] [VPNClientWorker_230] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,465 [INFO] [VPNClientWorker_231] [+] Conexión segura establecida con 127.0.0.1:55353 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,466 [INFO] [VPNClientWorker_231] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,478 [INFO] [VPNClientWorker_45] [+] Conexión segura establecida con 127.0.0.1:55356 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,478 [INFO] [VPNClientWorker_45] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,479 [INFO] [VPNClientWorker_233] [+] Conexión segura establecida con 127.0.0.1:55355 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,480 [INFO] [VPNClientWorker_233] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,492 [INFO] [VPNClientWorker_235] [+] Conexión segura establecida con 127.0.0.1:55358 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,493 [INFO] [VPNClientWorker_235] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,495 [INFO] [VPNClientWorker_237] [+] Conexión segura establecida con 127.0.0.1:55360 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,496 [INFO] [VPNClientWorker_237] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,497 [INFO] [VPNClientWorker_234] [+] Conexión segura establecida con 127.0.0.1:55357 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,498 [INFO] [VPNClientWorker_234] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,500 [INFO] [VPNClientWorker_236] [+] Conexión segura establecida con 127.0.0.1:55359 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,500 [INFO] [VPNClientWorker_236] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,504 [INFO] [VPNClientWorker_238] [+] Conexión segura establecida con 127.0.0.1:55361 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,507 [INFO] [VPNClientWorker_47] [+] Conexión segura establecida con 127.0.0.1:55362 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,507 [INFO] [VPNClientWorker_238] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,509 [INFO] [VPNClientWorker_47] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,514 [INFO] [VPNClientWorker_239] [+] Conexión segura establecida con 127.0.0.1:55363 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,515 [INFO] [VPNClientWorker_239] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,517 [INFO] [VPNClientWorker_48] [+] Conexión segura establecida con 127.0.0.1:55364 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,517 [INFO] [VPNClientWorker_48] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:07,518 [INFO] [VPNClientWorker_240] [+] Conexión segura establecida con 127.0.0.1:55365 | Protocolo: TLSv1.3 | Cipher: TLS_AES_256_GCM_SHA384
+2026-10-29 12:17:07,518 [INFO] [VPNClientWorker_240] [+] Certificado digital X.509 validado para identidad BYOD: 'eval_user'
+2026-10-29 12:17:21,418 [INFO] [MainThread] [+] Servidor VPN detenido y recursos liberados.
+2026-10-29 12:17:21,418 [INFO] [Thread-1 (start)] [+] Servidor VPN detenido y recursos liberados.
