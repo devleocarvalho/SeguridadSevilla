@@ -1,0 +1,66 @@
+================================================================================
+INSEGUS CYBERSECURITY - AUDITORÍA DE DISPOSITIVO MÓVIL (BYOD)
+UNIVERSIDAD U-SECURE - SECURITY TEAM 3
+================================================================================
+Fecha de Auditoría : 2026-10-28 11:05:40 CEST
+Identificador      : DEV-BYOD-02
+Propietario        : PTGAS (Sede Electrónica y Gestión Académica)
+Dispositivo        : Samsung Galaxy S23 (SM-S911B)
+Seguridad Hardware : Samsung Knox Vault & Embedded Secure Element (eSE)
+Sistema Operativo  : Android 14 / One UI 6.1
+Nivel de Parches   : 2026-10-01 (Al día)
+Herramientas       : Samsung Knox Security Health / Koodous v3.12 / Malwarebytes v5.4.1
+================================================================================
+
+[+] 1. EVALUACIÓN DE INTEGRIDAD DEL SISTEMA Y HARDWARE
+--------------------------------------------------------------------------------
+* Knox Warranty Bit          : 0x0 (Integridad de fábrica intacta)     [ CONFORME ]
+* Bootloader Status          : LOCKED (Bloqueado)                      [ CONFORME ]
+* Root / Jailbreak Detection : NINGÚN INDICIO DE MODIFICACIÓN DE KERNEL[ CONFORME ]
+* Play Integrity API         : MEETS_STRONG_INTEGRITY (Knox Attestation)[ CONFORME ]
+* Cifrado de Almacenamiento  : Activo (FBE con clave en Knox Vault)    [ CONFORME ]
+
+[+] 2. EVALUACIÓN DE CONECTIVIDAD Y RED
+--------------------------------------------------------------------------------
+* Conexión Wi-Fi Activa      : eduroam (WPA2/WPA3 Enterprise)          [ CONFORME ]
+* Redes Heredadas Guardadas  : Red antigua configurada con cifrado WEP [ RIESGO ALTO ]
+  -> Acción: Red WEP insegura eliminada; bloqueo de redes sin cifrar.  [ REMEDIADO ]
+* Bluetooth                  : Activo y visible para dispositivos nuevos[ RIESGO IDENTIFICADO ]
+  -> Acción: Visibilidad restringida a dispositivos emparejados.       [ REMEDIADO ]
+* Conexiones en Segundo Plano: Identificada app de clima enviando telemetría constante
+  -> Acción: Uso de datos en segundo plano restringido.                [ REMEDIADO ]
+
+[+] 3. AUDITORÍA DE APLICACIONES Y ANÁLISIS DE MALWARE (KOODOUS & MALWAREBYTES)
+--------------------------------------------------------------------------------
+* Total de Aplicaciones Analizadas: 168 paquetes instalados
+* Instalación de Orígenes Desconocidos (Sideloading):
+  - Desactivado globalmente por política Knox.                         [ CONFORME ]
+* Detección Heurística Koodous:
+  - Paquete: com.customthemes.samsung.style (Plugin de personalización)
+  - Clasificación: Sospechoso (Certificado autofirmado y permisos excesivos)
+  -> Acción: Paquete desinstalado inmediatamente.                      [ REMEDIADO ]
+* Escaneo Malwarebytes:
+  - 167 aplicaciones verificadas.
+  - Cero amenazas activas remanentes.                                  [ CONFORME ]
+
+[+] 4. AUDITORÍA DE PERMISOS CRÍTICOS Y PRIVACIDAD
+--------------------------------------------------------------------------------
+* Permisos de SMS y Llamadas : Restringidos al marcador y mensajería   [ CONFORME ]
+* Acceso a Cámara y Micrófono: Indicador de privacidad Knox activo     [ CONFORME ]
+* Gestor de Contraseñas      : Samsung Pass / Knox Vault activado      [ CONFORME ]
+
+[+] 5. GESTIÓN DE DATOS INSTITUCIONALES Y SEGREGACIÓN (BYOD)
+--------------------------------------------------------------------------------
+* Carpeta Segura (Secure Folder - Knox Workspace):
+  - Aplicaciones institucionales (Correo corporativo, VPN, Sede Electrónica)
+    aisladas en contenedor cifrado independiente.                      [ CONFORME ]
+* Bloqueo de Pantalla        : Biometría Ultrasónica + PIN 8 dígitos   [ CONFORME ]
+* Límite de Intentos         : Bloqueo temporal tras 5 intentos fallidos[ CONFORME ]
+* SmartThings Find / Wipe    : Habilitado e integrado con rectorado    [ CONFORME ]
+
+================================================================================
+RESULTADO FINAL DE LA AUDITORÍA - DEV-BYOD-02:
+* Puntuación Inicial de Postura: 62 / 100 (Riesgo Moderado - Red WEP y Plugin Sospechoso)
+* Puntuación Final Post-Remediación: 95 / 100 (Excelente - Totalmente Conforme)
+* Conclusión: DISPOSITIVO HOMOLOGADO PARA ACCESO A SEDE ELECTRÓNICA U-SECURE
+================================================================================

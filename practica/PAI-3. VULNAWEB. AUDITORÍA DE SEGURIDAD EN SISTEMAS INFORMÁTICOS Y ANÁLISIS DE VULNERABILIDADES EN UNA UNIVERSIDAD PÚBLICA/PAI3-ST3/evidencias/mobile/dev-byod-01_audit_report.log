@@ -1,0 +1,68 @@
+================================================================================
+INSEGUS CYBERSECURITY - AUDITORÍA DE DISPOSITIVO MÓVIL (BYOD)
+UNIVERSIDAD U-SECURE - SECURITY TEAM 3
+================================================================================
+Fecha de Auditoría : 2026-10-28 10:15:22 CEST
+Identificador      : DEV-BYOD-01
+Propietario        : PDI (Personal Docente e Investigador - Departamento TI)
+Dispositivo        : Google Pixel 8 Pro (husky)
+Seguridad Hardware : Google Titan M2 Security Chip
+Sistema Operativo  : Android 14 (Build UP1A.231005.007)
+Nivel de Parches   : 2026-10-05 (Al día - antigüedad inferior a 30 días)
+Herramientas       : Koodous Mobile Security v3.12 / Malwarebytes Mobile v5.4.1
+================================================================================
+
+[+] 1. EVALUACIÓN DE INTEGRIDAD DEL SISTEMA Y HARDWARE
+--------------------------------------------------------------------------------
+* Bootloader Status          : LOCKED (Bloqueado de fábrica)          [ CONFORME ]
+* Root / Jailbreak Detection : NINGÚN PRIVILEGIO ROOT DETECTADO       [ CONFORME ]
+* Play Integrity API         : MEETS_STRONG_INTEGRITY (Hardware HSM)  [ CONFORME ]
+* SEAndroid (Modo SELinux)   : Enforcing                               [ CONFORME ]
+* Cifrado de Almacenamiento  : Activo (FBE - AES-256-XTS por Hardware) [ CONFORME ]
+
+[+] 2. EVALUACIÓN DE CONECTIVIDAD Y RED
+--------------------------------------------------------------------------------
+* Conexión Wi-Fi Activa      : eduroam (WPA2/WPA3 Enterprise 802.1X)   [ CONFORME ]
+* Redes Públicas Guardadas   : 2 redes abiertas encontradas (Centro C.)[ RIESGO IDENTIFICADO ]
+  -> Acción: Perfiles de redes abiertas eliminados; Auto-connect OFF.  [ REMEDIADO ]
+* Bluetooth                  : Activo y visible permanentemente        [ RIESGO IDENTIFICADO ]
+  -> Acción: Modo invisible activado; apagado automático en aula.      [ REMEDIADO ]
+* NFC                        : Activo (Restringido para autenticación) [ CONFORME ]
+
+[+] 3. AUDITORÍA DE APLICACIONES Y ANÁLISIS DE MALWARE (KOODOUS & MALWAREBYTES)
+--------------------------------------------------------------------------------
+* Total de Aplicaciones Analizadas: 142 paquetes instalados
+* Instalación de Orígenes Desconocidos (Sideloading):
+  - Chrome con permiso de instalar APKs externas                       [ RIESGO ALTO ]
+  -> Acción: Permiso 'Instalar aplicaciones desconocidas' REVOCADO.    [ REMEDIADO ]
+* Detección Heurística Koodous:
+  - Paquete: com.pdfutility.tools.free (Utilidad PDF de terceros)
+  - Clasificación: PUP/Adware (SDK de telemetría agresiva no declarado)
+  -> Acción: Aplicación desinstalada; reemplazada por visor oficial.    [ REMEDIADO ]
+* Escaneo Malwarebytes:
+  - 141 aplicaciones legítimas verificadas con hash SHA-256 limpio.
+  - 0 Troyanos, 0 Ransomware, 0 Spyware activos.
+
+[+] 4. AUDITORÍA DE PERMISOS CRÍTICOS Y PRIVACIDAD
+--------------------------------------------------------------------------------
+* Acceso a Accesibilidad     : Únicamente servicios del sistema        [ CONFORME ]
+* Lectura de Notificaciones  : 1 app de linterna con permiso indebido  [ RIESGO IDENTIFICADO ]
+  -> Acción: Permiso de lectura de notificaciones revocado de inmediato[ REMEDIADO ]
+* Superposición de Pantalla (Display over other apps):
+  - Riesgo de secuestro de clics (Tapjacking) y robo de tokens 2FA.
+  -> Acción: Revocada en todas las aplicaciones no esenciales.         [ REMEDIADO ]
+
+[+] 5. GESTIÓN DE DATOS INSTITUCIONALES Y SEGREGACIÓN (BYOD)
+--------------------------------------------------------------------------------
+* Perfil de Trabajo (Android Enterprise Work Profile):
+  - Datos universitarios aislados del entorno personal.                [ ACTIVADO ]
+* Bloqueo de Pantalla        : Biometría facial Class 3 + PIN 6 dígitos[ CONFORME ]
+* Límite de Inactividad      : 2 minutos de inactividad                [ CONFORME ]
+* Localización / Borrado     : Google Find My Device Corporativo activo[ CONFORME ]
+
+================================================================================
+RESULTADO FINAL DE LA AUDITORÍA - DEV-BYOD-01:
+* Puntuación Inicial de Postura: 68 / 100 (Riesgo Moderado - Sideloading y Adware)
+* Puntuación Final Post-Remediación: 96 / 100 (Excelente - Totalmente Conforme)
+* Conclusión: DISPOSITIVO HOMOLOGADO PARA ACCESO A RED INSTITUCIONAL U-SECURE
+================================================================================

@@ -1,0 +1,71 @@
+{
+  "policies": {
+    "DisableTelemetry": true,
+    "DisableFirefoxStudies": true,
+    "DisablePocket": true,
+    "DisableFeedbackCommands": true,
+    "DisableSystemAddonUpdate": true,
+    "DisableSetDesktopBackground": true,
+    "OfferToSaveLogins": false,
+    "PasswordManagerEnabled": false,
+    "PrimaryPassword": false,
+    "PromptForDownloadLocation": true,
+    "NetworkPrediction": false,
+    "DNSOverHTTPS": {
+      "Enabled": true,
+      "ProviderURL": "https://cloudflare-dns.com/dns-query",
+      "Locked": true
+    },
+    "HttpsOnlyMode": "force_enabled",
+    "ExtensionSettings": {
+      "*": {
+        "installation_mode": "blocked",
+        "blocked_install_message": "Instalación de extensiones bloqueada por directiva corporativa de U-Secure. Solo se permiten complementos oficiales homologados y firmados."
+      }
+    },
+    "InstallAddonsPermission": {
+      "Default": false
+    },
+    "EnableTrackingProtection": {
+      "Value": true,
+      "Locked": true,
+      "Cryptomining": true,
+      "Fingerprinting": true,
+      "EmailTracking": true
+    },
+    "Cookies": {
+      "Behavior": "reject-foreign",
+      "Locked": true
+    },
+    "SanitizeOnShutdown": {
+      "Cache": true,
+      "Cookies": false,
+      "History": false,
+      "Sessions": false,
+      "SiteSettings": false,
+      "Locked": true
+    },
+    "Preferences": {
+      "xpinstall.signatures.required": {
+        "Value": true,
+        "Status": "locked"
+      },
+      "media.peerconnection.enabled": {
+        "Value": false,
+        "Status": "locked"
+      },
+      "privacy.firstparty.isolate": {
+        "Value": true,
+        "Status": "locked"
+      },
+      "geo.enabled": {
+        "Value": false,
+        "Status": "locked"
+      },
+      "dom.battery.enabled": {
+        "Value": false,
+        "Status": "locked"
+      }
+    }
+  }
+}

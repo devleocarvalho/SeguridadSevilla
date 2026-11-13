@@ -1,0 +1,9 @@
+[2026-10-28 17:15:45] === Lynis 3.1.7 Security Audit: Sistema 3 (u-secure-db01 - Debian 12 Bookworm) ===
+[2026-10-28 17:15:46] Kernel: 6.1.0-21-amd64 x86_64 | Role: Servidor BD Expedientes Académicos MariaDB
+[2026-10-28 17:15:48] [OK] Nameservers in /etc/resolv.conf: 192.168.1.1, 1.1.1.1 (Redundancy active)
+[2026-10-28 17:15:51] [OK] Legal banners /etc/issue and /etc/issue.net compliant with ENS.
+[2026-10-28 17:15:55] [OK] File creation mask UMASK 027 verified.
+[2026-10-28 17:15:58] [OK] Warning AUTH-9286 resolved: PASS_MAX_DAYS=90, PASS_MIN_DAYS=7, PASS_WARN_AGE=14.
+[2026-10-28 17:16:03] [OK] Sysctl parameters hardened against network spoofing and kernel exploitation.
+[2026-10-28 17:16:08] [OK] USB and legacy storage drivers disabled in /etc/modprobe.d/hardening.conf.
+[2026-10-28 17:16:15] Lynis audit completed: 0 Warnings, 36 Suggestions. Hardening Index: 71/100 (Aprobado >= 70).

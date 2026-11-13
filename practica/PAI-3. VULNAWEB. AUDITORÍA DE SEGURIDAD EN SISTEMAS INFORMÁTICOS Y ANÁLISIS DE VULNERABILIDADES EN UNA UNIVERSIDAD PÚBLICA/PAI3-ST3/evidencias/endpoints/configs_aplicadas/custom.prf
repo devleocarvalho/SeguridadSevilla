@@ -1,0 +1,13 @@
+# ==============================================================================
+# PERFIL PERSONALIZADO DE AUDITORÍA LYNIS - UNIVERSIDAD U-SECURE (GRUPO 3)
+# ==============================================================================
+# Justificaciones técnicas de las excepciones corporativas:
+# FILE-6310: Particiones separadas (/tmp, /var, /home con noexec, nodev, nosuid).
+#            No aplicable a máquina virtual de estudiante/auditor con partición raíz única.
+# KRNL-5788: Soporte para volcados de memoria (core dumps) del kernel (deshabilitado en producción).
+# STRG-1840: Deshabilitar almacenamiento USB a nivel de firmware/BIOS (inviable en entorno virtualizado VirtualBox).
+# ==============================================================================
+
+skip-test=FILE-6310
+skip-test=KRNL-5788
+skip-test=STRG-1840

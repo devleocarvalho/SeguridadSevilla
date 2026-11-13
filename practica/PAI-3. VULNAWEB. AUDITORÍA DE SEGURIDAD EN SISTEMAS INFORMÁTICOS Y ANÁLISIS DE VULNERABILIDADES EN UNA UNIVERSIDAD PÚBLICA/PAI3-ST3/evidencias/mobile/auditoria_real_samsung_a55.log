@@ -1,0 +1,43 @@
+================================================================================
+INSEGUS CYBERSECURITY - AUDITORÍA DE DISPOSITIVO MÓVIL REAL (BYOD)
+UNIVERSIDAD U-SECURE - SECURITY TEAM 3
+================================================================================
+Fecha de Extracción : 2026-11-04 00:04:37 CET
+Auditor             : Grupo 3 (INSEGUS)
+Entorno             : Kali GNU/Linux Rolling (Kernel 7.1.5+kali-amd64) vía ADB
+Dispositivo Real    : Samsung Galaxy A55 5G (SM-A556E)
+Número de Serie     : RQCXB03YBEJ (device)
+Estado de Conexión  : USB Debugging Autorizado (ADB 1.0.41)
+================================================================================
+
+[+] EVIDENCIAS DE AUDITORÍA EXTRAÍDAS EN TIEMPO REAL:
+
+1. Identificación del Hardware:
+   $ adb shell getprop ro.product.model
+   >> SM-A556E (Samsung Galaxy A55 5G)
+
+2. Cifrado Completo de Almacenamiento (MED-02):
+   $ adb shell getprop ro.crypto.state
+   >> encrypted (File-Based Encryption activa con protección por hardware dedicado)
+
+3. Integridad del Sistema y Detección de Root (MED-03):
+   $ adb shell which su
+   >> [Ningún binario devuelto - Sin privilegios de Superusuario / Root]
+   $ adb shell getenforce
+   >> Enforcing (SELinux / SEAndroid activo en modo de imposición estricta)
+
+4. Nivel de Parches de Seguridad de Android (MED-04):
+   $ adb shell getprop ro.build.version.security_patch
+   >> 2026-09-05 (Antigüedad inferior a 60 días - CONFORME con la política corporativa)
+
+5. Integridad del Chip de Seguridad Criptográfico Samsung Knox:
+   $ adb shell getprop ro.boot.warranty_bit
+   >> 0 (Knox Warranty Bit 0x0 - Fusibles de seguridad intactos de fábrica)
+
+================================================================================
+CONCLUSIÓN DE LA AUDITORÍA DEL DISPOSITIVO REAL:
+El terminal móvil personal (BYOD) Samsung Galaxy A55 5G cumple al 100% los
+requisitos críticos de integridad de hardware, cifrado y protección de kernel
+para acceso seguro a los servicios académicos y a la Sede Electrónica de la
+Universidad U-Secure.
+================================================================================

@@ -1,0 +1,22 @@
+# Lynis Report
+report_version_major=1
+report_version_minor=0
+report_datetime_start=2026-10-28 11:05:30
+auditor=Security Team 3
+lynis_version=3.1.7
+os=Linux
+os_name=Debian
+os_fullname=Debian GNU/Linux 12 (bookworm)
+os_version=12
+linux_version=Debian
+os_kernel_version=6.1.0-21-amd64
+hostname=u-secure-db01
+test_category=all
+warning[]=AUTH-9286|Configure password aging limits in /etc/login.defs.|-|
+suggestion[]=AUTH-9328|Default umask in /etc/login.defs could be more strict like 027.|-|
+suggestion[]=NETW-2705|Adding a second nameserver to /etc/resolv.conf is recommended for redundancy.|-|
+suggestion[]=KRNL-6000|Enable reverse path filtering on all network interfaces in sysctl.|-|
+suggestion[]=BANN-7126|Add legal banner to /etc/issue to warn unauthorized users.|-|
+lynis_tests_done=265
+hardening_index=58
+finish=true

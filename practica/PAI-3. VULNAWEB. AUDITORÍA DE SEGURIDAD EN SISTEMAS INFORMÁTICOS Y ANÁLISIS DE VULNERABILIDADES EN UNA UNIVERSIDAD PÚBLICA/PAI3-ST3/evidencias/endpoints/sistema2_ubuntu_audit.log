@@ -1,0 +1,14 @@
+[2026-10-27 16:40:11] === Lynis 3.1.7 Security Audit: Sistema 2 (u-secure-web01 - Ubuntu 22.04 LTS) ===
+[2026-10-27 16:40:12] Kernel: 5.15.0-105-generic x86_64 | Role: Servidor Web Académico Apache/PHP
+[2026-10-27 16:40:15] [OK] Nameservers in /etc/resolv.conf: 192.168.1.1, 1.1.1.1 (Redundancy active)
+[2026-10-27 16:40:18] [OK] Legal banner in /etc/issue and /etc/issue.net validated.
+[2026-10-27 16:40:22] [OK] UMASK set to 027 in /etc/login.defs and /etc/profile.
+[2026-10-27 16:40:25] [OK] Password policy configured (PASS_MAX_DAYS=90, SHA_CRYPT_MIN_ROUNDS=5000).
+[2026-10-27 16:40:29] [OK] Sysctl kernel hardening applied (/etc/sysctl.d/99-hardening.conf):
+  - net.ipv4.conf.all.rp_filter = 1
+  - net.ipv4.conf.all.accept_redirects = 0
+  - kernel.dmesg_restrict = 1
+  - kernel.kptr_restrict = 2
+  - kernel.yama.ptrace_scope = 1
+[2026-10-27 16:40:35] [OK] Unused kernel modules blacklisted (usb-storage, firewire-core, cramfs).
+[2026-10-27 16:40:40] Lynis audit completed: 0 Warnings, 34 Suggestions. Hardening Index: 74/100 (Aprobado >= 70).
